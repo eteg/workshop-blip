@@ -13,7 +13,7 @@ function receiver1(message) {
 }
 
 function receiver2(message) {
-  const msg = { id: '1', type: 'text/plain', content: 'Hello, world', to: message.from };
+  const msg = { id: '1', type: 'text/plain', content: `Você disse: ${message.content}`, to: message.from };
   client.sendMessage(msg);
 }
 
