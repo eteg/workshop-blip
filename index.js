@@ -1,6 +1,6 @@
 import * as  MessagingHub from 'messaginghub-client';
 import WebSocketTransport from 'lime-transport-websocket';
-import {IDENTIFIER, ACCESS_KEY} from './blipAuthConsts';
+import {IDENTIFIER, ACCESS_KEY} from './blipAuth';
 
 const client = new MessagingHub.ClientBuilder()
   .withIdentifier(IDENTIFIER)
