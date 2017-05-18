@@ -112,7 +112,7 @@ function states(m) {
         default:
           break;
       }
-    });
+    }).catch(error => console.log(error));
 }
 
 client
