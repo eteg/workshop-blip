@@ -86,7 +86,7 @@ function authorize(credentials, callback) {
 
 const functions = {};
 
-functions.listEvents = () => (auth) => {
+functions.listEvents = callback => (auth) => {
   const calendar = google.calendar('v3');
   calendar.events.list({
     auth,
@@ -105,11 +105,15 @@ functions.listEvents = () => (auth) => {
       console.log('No upcoming events found.');
     } else {
       console.log('Upcoming 10 events:');
+      const formatedEvents = [];
       for (let i = 0; i < events.length; i += 1) {
         const event = events[i];
         const start = event.start.dateTime || event.start.date;
         console.log('%s - %s', start, event.summary);
+        formatedEvents.push(`${start}, ${event.summary}`);
       }
+
+      callback(formatedEvents);
     }
   });
 };
