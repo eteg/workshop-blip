@@ -4,11 +4,14 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
+    "google-auth-library": "^0.10.0",
+    "google-calendar": "^1.3.2",
+    "googleapis": "^19.0.0",
     "lime-transport-websocket": "^2.0.2",
     "messaginghub-client": "^3.3.0"
   },
   "scripts": {
-    "start": "nodemon index.js --exec babel-node"
+    "start": "nodemon index.js --exec babel-node",
   },
   "devDependencies": {
     "babel-cli": "^6.24.1",
