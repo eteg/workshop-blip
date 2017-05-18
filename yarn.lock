@@ -1907,7 +1907,7 @@ levn@^0.3.0, levn@~0.3.0:
     prelude-ls "~1.1.2"
     type-check "~0.3.2"
 
-lime-js@^2.0.1, lime-js@^2.5.1:
+lime-js@^2.0.1, lime-js@^2.5.1, lime-js@^2.5.2:
   version "2.5.2"
   resolved "https://registry.yarnpkg.com/lime-js/-/lime-js-2.5.2.tgz#4384df94a091763974a7581cd735785dea5d28e7"
   dependencies:

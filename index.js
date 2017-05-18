@@ -143,23 +143,22 @@ client
     client.addMessageReceiver(m => m.type === 'text/plain' && m.content.toLowerCase().trim() === 'agendar evento',
       () => {
         calendar.exec('createEvent', {
-          summary: 'Google I/O 2015',
-          location: '800 Howard St., San Francisco, CA 94103',
-          description: 'A chance to hear more about Google\'s developer products.',
+          summary: 'Evento teste',
+          location: 'Belo Horizonte',
+          description: 'Workshop Blip',
           start: {
-            dateTime: '2015-05-28T09:00:00-07:00',
+            dateTime: '2017-05-18T09:00:00-07:00',
             timeZone: 'America/Los_Angeles',
           },
           end: {
-            dateTime: '2015-05-28T17:00:00-07:00',
+            dateTime: '2017-05-18T17:00:00-07:00',
             timeZone: 'America/Los_Angeles',
           },
           recurrence: [
             'RRULE:FREQ=DAILY;COUNT=2',
           ],
           attendees: [
-            { email: 'lpage@example.com' },
-            { email: 'sbrin@example.com' },
+            { email: 'douglas.rodrigues@eteg.com.br' },
           ],
           reminders: {
             useDefault: false,
