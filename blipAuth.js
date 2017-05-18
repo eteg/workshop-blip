@@ -10,5 +10,5 @@ if (!IDENTIFIER || !ACCESS_KEY) {
   Com isso temos acesso ao Identifier e a AccessKey. Coloque-os em blipAuth.js.
   `);
 
-  process.exit(1); 
+  process.exit(1);
 }
